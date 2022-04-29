@@ -18,7 +18,7 @@ import picocli.CommandLine.Option;
 public class mockRestLet extends ServerResource implements Callable<Integer> {
 
     @Option(names = {"-p", "--port"}, description = "Listen port")
-    private Integer port = 8182;
+    private Integer port = 8080;
 
     @Option(names = {"-m", "--message"}, description = "Response message")
     private String msg = "mockRest is up!";
