@@ -29,7 +29,7 @@ public class mockRestLet extends ServerResource implements Callable<Integer> {
     @Get("txt")
     public String resString() {
         System.out.println(this.msg);
-        return this.msg  + "\nOpenShift s2i\n";
+        return this.msg + "\nOpenShift s2i branch javabox (" + System.getenv("HOSTNAME") + ")\n";
     }
 
     private void printSysProperties() {
